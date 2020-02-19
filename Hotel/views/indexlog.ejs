@@ -27,17 +27,7 @@
 
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-  <style >
-                .box{
-                    position: absolute;
-                    margin: auto;
-                    margin-top: -55px;
-                    padding: 10px;
-                    height: 120px;
-                    width: 1075px;
-                    background: #D8E1DE;
-                    opacity: 0.6;
-                }</style>
+
 
 <link href="plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css">
     <!-- Theme Style -->
@@ -106,7 +96,7 @@
 		<div class="background_image" style="background-image:url(images/booking.jpg)"></div>
 		<div class="home_container">
 			<div class="container">
-        <div class = "box"></div>
+        <div class = "boxtran"></div>
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
@@ -115,13 +105,13 @@
                 <form action="searchact" method="post" class="booking_form" id="booking_form">
                   <div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
                     <div class="booking_input_container d-flex flex-row align-items-start justify-content-start flex-wrap">
-                      <div><input type="text" class="datepicker booking_input booking_input_a booking_in" name="FCheckIn"placeholder="Check in" required="required"></div>
-                      <div><input type="text" class="datepicker booking_input booking_input_a booking_out" name="FCheckOut"placeholder="Check out" required="required"></div>
+                      <div><input data-dd-theme="leaf" data-large-mode="true" data-large-default="true" data-lock="from" data-translate-mode="true" type="text" class="datepicker booking_input booking_input_a booking_in" name="FCheckIn"placeholder="Check in" required="required"></div>
+											<div><input data-dd-theme="leaf" data-large-mode="true" data-large-default="true" data-lock="from" data-translate-mode="true" type="text" class="datepicker booking_input booking_input_a booking_out" name="FCheckOut"placeholder="Check out" required="required"></div>
                       <script>
                           $('input').dateDropper();
                       </script>
                     </div>
-                    <div><input class="booking_button trans_200" type="submit">Searching</input></div>
+                    <div><input class="booking_button trans_200" type="submit" value = "Searching"></input></div>
                   </div>
                 </form>
               </div>
